@@ -3,7 +3,6 @@ rule xmrig {
     description = "xmrig detection based on versions 2.8, 2.9, 3.0, 3.1"
     author = "KrknSec"
     date = "2019-08-31"
-
   strings:
     $mz = { 4d 5a }
     $x1 = "xmrig.exe" fullword wide
