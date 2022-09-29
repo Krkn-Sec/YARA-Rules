@@ -1,9 +1,8 @@
 rule xmrig_config {
   meta:
     description = "config file detection - from xmrig versions 2.8, 2.9, 3.0, 3.1"
-    author = "dontw8up"
+    author = "KrknSec"
     date = "2019-08-31"
-
   strings:
     $mz = { 7b 0a }
     $x1 = "donate-level" fullword ascii
